@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>💖</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+      background: pink;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    #no {
+      position: absolute;
+      background: red;
+      color: white;
+    }
+    #yes {
+      background: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you be my val? 💕</h1>
+<button id="yes" onclick="alert('Yayyy 💖🥰')">Yes</button>
+<button id="no">No</button>
+
+<script>
+  const no = document.getElementById("no");
+  no.addEventListener("mouseover", () => {
+    no.style.left = Math.random()*80 + "%";
+    no.style.top = Math.random()*80 + "%";
+  });
+</script>
+
+</body>
+</html>
